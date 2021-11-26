@@ -1,0 +1,15 @@
+<div>
+    <button type="button" class="btn btn-primary start-100" (click)="click()">Añadir</button>
+
+    <div *ngIf="mostrar">
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <div class="contenedor bg-primary" style="height: 100px;width: 300px;">
+                        <div class="input-group " >
+                            <input type="text" class="form-control m-3"  aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="tarea" #tarea>
+                        </div>
+                        <button type="button" class="form-control" (click)="nuevaTarea(tarea.value)">Añadir</button>
+            </div>
+        </div>
+    </div>
+
+</div>
